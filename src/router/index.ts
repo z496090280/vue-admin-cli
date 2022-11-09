@@ -1,15 +1,15 @@
 /*
  * @Author: lee
  * @Date: 2022-11-09 17:25:02
- * @LastEditTime: 2022-11-09 17:36:33
+ * @LastEditTime: 2022-11-09 18:24:20
  */
-import { createRouter, createMemoryHistory } from "vue-router";
+import { createRouter, createWebHistory } from "vue-router";
 import routes from "~pages";
 
 console.log(routes)
 
 const router = createRouter({
-  history: createMemoryHistory(),
+  history: createWebHistory(),
   routes
 })
 
