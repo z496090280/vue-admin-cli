@@ -1,7 +1,7 @@
 <!--
  * @Author: lee
  * @Date: 2022-11-09 17:43:29
- * @LastEditTime: 2022-11-10 11:21:33
+ * @LastEditTime: 2022-11-10 11:46:55
 -->
 <template>
   <div class="common-layout">
@@ -17,11 +17,9 @@
           <BasicHeader />
         </el-header>
 
-        <el-scrollbar>
-          <el-main>
-            <slot></slot>
-          </el-main>
-        </el-scrollbar>
+        <el-main class="basic-layout-content">
+          <el-scrollbar> <slot></slot> </el-scrollbar>
+        </el-main>
       </el-container>
     </el-container>
   </div>

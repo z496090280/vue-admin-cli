@@ -1,7 +1,7 @@
 <!--
  * @Author: lee
  * @Date: 2022-11-09 17:48:37
- * @LastEditTime: 2022-11-10 11:11:44
+ * @LastEditTime: 2022-11-10 11:46:19
 -->
 <template>
   <div class="basic-header">
@@ -17,7 +17,7 @@ const item = {
   name: "Tom",
   address: "No. 189, Grove St, Los Angeles",
 };
-const tableData = computed(() => Array.from({ length: 200 }).fill(item))
+const tableData = computed(() => Array.from({ length: 100 }).fill(item))
 // const tableData = ref<{
 //   date: string;
 //   name: string,
