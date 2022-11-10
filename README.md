@@ -1,7 +1,7 @@
 <!--
  * @Author: lee
  * @Date: 2022-11-09 17:16:14
- * @LastEditTime: 2022-11-10 14:31:59
+ * @LastEditTime: 2022-11-10 15:59:44
 -->
 # 项目管理
 > 推荐：pnpm
@@ -11,7 +11,7 @@
 3. npm run build    // 打包项目
 ````
 
-# Vue 3 + Vite
+# Vue 3 + Vite + pinia
 
 This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
 
@@ -32,3 +32,9 @@ Element-plus **按需加载**，文件内直接引用即可，支持tree shaking
 
 # 刻意而为之事项
 - 导入文件时不忽略拓展名（例如：.vue），因为它会影响 IDE 和类型支持。
+
+# 插件介绍
+```
+1. Immer  // 简化了不可变数据结构的处理
+2. lodash-es  // 函数处理工具即lodash压缩包，利于tree shaking
+```
