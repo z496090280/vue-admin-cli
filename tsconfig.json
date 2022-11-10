@@ -10,7 +10,9 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "esModuleInterop": true,
-    "types": ["element-plus/global"],
+    "types": [
+      "element-plus/global"
+    ],
     "lib": [
       "ESNext",
       "DOM"

@@ -1,7 +1,7 @@
 <!--
  * @Author: lee
  * @Date: 2022-11-09 17:43:29
- * @LastEditTime: 2022-11-10 11:46:55
+ * @LastEditTime: 2022-11-10 14:29:53
 -->
 <template>
   <div class="common-layout">
@@ -27,8 +27,8 @@
 
 <script setup lang="ts">
 import { ref } from "vue";
-import BasicHeader from "../BasicHeader/BasicHeader.vue";
-import BasicMenu from "../BasicMenu/BasicMenu.vue";
+import BasicHeader from "@/components/BasicHeader/BasicHeader.vue";
+import BasicMenu from "@/components/BasicMenu/BasicMenu.vue";
 import "./BasicLayout.less";
 </script>
 

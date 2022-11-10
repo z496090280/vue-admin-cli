@@ -1,7 +1,7 @@
 <!--
  * @Author: lee
  * @Date: 2022-11-10 09:40:04
- * @LastEditTime: 2022-11-10 12:04:52
+ * @LastEditTime: 2022-11-10 12:08:45
  * @desc: 404通用页面
 -->
 <template>
@@ -31,7 +31,7 @@ const router = useRouter();
 
 function handleToHome() {
   return router.push({
-    name: "index"
+    path: "/"
   })
 }
 </script>

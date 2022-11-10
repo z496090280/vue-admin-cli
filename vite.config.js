@@ -1,7 +1,7 @@
 /*
  * @Author: lee
  * @Date: 2022-11-09 17:16:14
- * @LastEditTime: 2022-11-10 10:09:35
+ * @LastEditTime: 2022-11-10 14:27:03
  */
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
@@ -9,6 +9,7 @@ import Pages from "vite-plugin-pages"
 import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
 import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
+import { resolve } from 'path'
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -28,5 +29,13 @@ export default defineConfig({
     Components({
       resolvers: [ElementPlusResolver()],
     }),
-  ]
+  ],
+  resolve: {
+    alias: [
+      {
+        find: "@",
+        replacement: resolve(__dirname, "./src"),
+      }
+    ]
+  }
 })
