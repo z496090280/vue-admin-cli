@@ -1,7 +1,7 @@
 /*
  * @Author: lee
  * @Date: 2022-11-09 17:16:14
- * @LastEditTime: 2022-11-10 16:14:36
+ * @LastEditTime: 2022-11-10 17:12:15
  */
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
@@ -13,6 +13,10 @@ import { resolve } from 'path'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  esbuild: {
+    minify: true,
+    pure: ["console.log"]
+  },
   server: {
     headers: {
       "Access-Control-Allow-Origin": "*"
