@@ -1,28 +1,37 @@
 <!--
  * @Author: lee
  * @Date: 2022-11-09 17:43:29
- * @LastEditTime: 2022-11-09 18:17:05
+ * @LastEditTime: 2022-11-10 11:21:33
 -->
 <template>
-  <div class="basic-layout">
-    <div class="basic-layout-menu">
-      <BasicMenu />
-    </div>
-    <div class="basic-layout-header">
-      <BasicHeader />
-    </div>
+  <div class="common-layout">
+    <el-container>
+      <el-aside width="200px" class="basic-layout-menu">
+        <el-scrollbar height="100vh">
+          <BasicMenu />
+        </el-scrollbar>
+      </el-aside>
 
-    <div class="basic-layout-content">
-      <slot></slot>
-    </div>
+      <el-container class="main-right">
+        <el-header class="basic-layout-header">
+          <BasicHeader />
+        </el-header>
+
+        <el-scrollbar>
+          <el-main>
+            <slot></slot>
+          </el-main>
+        </el-scrollbar>
+      </el-container>
+    </el-container>
   </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import { ref } from "vue";
 import BasicHeader from "../BasicHeader/BasicHeader.vue";
-import BasicMenu from "../BasicMenu/BasicMenu.vue"
-import './BasicLayout.less';
+import BasicMenu from "../BasicMenu/BasicMenu.vue";
+import "./BasicLayout.less";
 </script>
 
 <style lang="less" scoped></style>

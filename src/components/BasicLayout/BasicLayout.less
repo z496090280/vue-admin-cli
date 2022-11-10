@@ -1,13 +1,29 @@
-.basic-layout {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-
-  &-header {
-    height: 60px;
+.common-layout {
+  .basic-layout-header{
+    height: 90px;
+  }
+  .main-right {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    .basic-layout-content {
+      flex: auto;
+    }
+  }
+  .el-header {
+    background-color: var(--el-color-primary-light-7);
+    color: var(--el-text-color-primary);
+    text-align: center;
   }
 
-  &-content {
-    flex: 1;
+  .el-aside {
+    background-color: var(--el-color-primary-light-8);
+    color: var(--el-text-color-primary);
+  }
+
+  .el-main {
+    background-color: var(--el-color-primary-light-9);
+    color: var(--el-text-color-primary);
+    text-align: center;
   }
 }

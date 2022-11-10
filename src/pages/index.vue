@@ -1,7 +1,7 @@
 <!--
  * @Author: lee
  * @Date: 2022-11-09 17:27:26
- * @LastEditTime: 2022-11-09 18:06:11
+ * @LastEditTime: 2022-11-10 10:10:40
 -->
 <template>
     <div>
@@ -9,7 +9,7 @@
     </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import { ref } from "vue" 
 
 </script>
