@@ -1,7 +1,7 @@
 <!--
  * @Author: lee
  * @Date: 2022-11-09 17:16:14
- * @LastEditTime: 2022-11-10 17:12:30
+ * @LastEditTime: 2022-11-15 11:46:46
 -->
 <template>
     <div>
@@ -17,6 +17,6 @@ import BasicLayout from "@/components/BasicLayout/BasicLayout.vue"
 
 </script>
 
-<style lang="less" scoped>
+<style lang="scss" scoped>
 
 </style>

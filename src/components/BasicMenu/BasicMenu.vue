@@ -1,7 +1,7 @@
 <!--
  * @Author: lee
  * @Date: 2022-11-09 17:48:37
- * @LastEditTime: 2022-11-10 11:46:19
+ * @LastEditTime: 2022-11-15 11:48:34
 -->
 <template>
   <div class="basic-header">
@@ -11,7 +11,7 @@
 
 <script setup lang="ts">
 import { ref, computed } from "vue";
-import "./BasicMenu.less";
+import "./BasicMenu.scss";
 const item = {
   date: "2016-05-02",
   name: "Tom",

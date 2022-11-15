@@ -1,8 +1,8 @@
+<!-- eslint-disable vue/multi-word-component-names -->
 <!--
  * @Author: lee
- * @Date: 2022-11-10 09:40:04
- * @LastEditTime: 2022-11-10 12:08:45
- * @desc: 404通用页面
+ * @Date: 2022-11-11 10:34:53
+ * @LastEditTime: 2022-11-11 11:00:19
 -->
 <template>
   <div class="main-404">
@@ -19,24 +19,26 @@
         Please check that the URL you entered is correct, or click the button
         below to return to the homepage.
       </p>
-      <el-button round color="#626aef" @click="handleToHome">Back to home</el-button>
+      <el-button round color="#626aef" @click="handleToHome"
+        >Back to home</el-button
+      >
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-import { ref } from "vue";
-import { useRouter } from "vue-router";
-const router = useRouter();
+import { useRouter } from 'vue-router'
+
+const router = useRouter()
 
 function handleToHome() {
   return router.push({
-    path: "/"
+    path: '/',
   })
 }
 </script>
 
-<style lang="less" scoped>
+<style lang="scss" scoped>
 .main-404 {
   display: flex;
   flex-direction: row;

@@ -1,7 +1,7 @@
 /*
  * @Author: lee
  * @Date: 2022-11-09 17:16:14
- * @LastEditTime: 2022-11-10 17:12:15
+ * @LastEditTime: 2022-11-15 11:38:59
  */
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
@@ -27,7 +27,7 @@ export default defineConfig({
     Pages({
       // 自动化路由配置
       // 规则只命中components下的一级文件
-      exclude: [ '**/components/**/*' ],
+      exclude: ['**/components/**/*', '**/service/**/*'],
       dirs: 'src/pages',
       // extensions: [ 'vue' ],
     }),

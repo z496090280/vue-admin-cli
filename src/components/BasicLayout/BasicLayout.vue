@@ -1,7 +1,7 @@
 <!--
  * @Author: lee
  * @Date: 2022-11-09 17:43:29
- * @LastEditTime: 2022-11-10 14:29:53
+ * @LastEditTime: 2022-11-15 11:48:30
 -->
 <template>
   <div class="common-layout">
@@ -29,7 +29,7 @@
 import { ref } from "vue";
 import BasicHeader from "@/components/BasicHeader/BasicHeader.vue";
 import BasicMenu from "@/components/BasicMenu/BasicMenu.vue";
-import "./BasicLayout.less";
+import "./BasicLayout.scss";
 </script>
 
-<style lang="less" scoped></style>
+<style lang="scss" scoped></style>
